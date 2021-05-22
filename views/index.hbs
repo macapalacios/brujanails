@@ -1,0 +1,54 @@
+
+    <div class="container">
+        <h2 class="display-2 mt-2">BrujaNails</h2>
+        <div class="d-flex justify-content-evenly">   
+            <div class="col-md-4 mt-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h3>{{product_1}}   </h3>
+                    </div>
+                    <div class="card-body">
+                        <img src="/images/product_1.jpg" class="img-fluid" alt={{product_1}}>
+                         <h4>Descripcion</h4>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima inventore facilis repellat impedit, quae voluptate harum voluptatum sint nulla quia libero reprehenderit, aliquam quo minus.
+                        </p>
+                        <hr>
+                        <h4>Precio $ {{price_1}} </h4>
+                        <div>
+                            <form action="http://localhost:3000/checkout" method="POST">
+                            <input type="hidden" name="title" value={{product_1}}>
+                            <input type="hidden" name="price" value={{price_1}}>
+                            <input type="submit" value="Comprar" class="btn btn-primary w-100">
+                            </form>
+                        </div>
+                    </div>
+                     </div>
+                </div>
+        
+                <div class="col-md-4 mt-4">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h3>{{product_2}}   </h3>
+                        </div>
+                        <div class="card-body">
+                            
+                            <img src="/images/product_2.png" class="img-fluid" alt={{product_2}}>
+                            <h4>Descripcion</h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima inventore facilis repellat impedit, quae voluptate harum voluptatum sint nulla quia libero reprehenderit, aliquam quo minus.
+                            </p>
+                            <hr>
+                            <h4>Precio $ {{price_2}} </h4>
+                            <div>
+                                <form action="http://localhost:3000/checkout" method="POST">
+                                <input type="hidden" name="title" value={{product_2}}>
+                                <input type="hidden" name="price" value={{price_2}}>
+                                <input type="submit" value="Comprar" class="btn btn-primary w-100">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+    </div>
