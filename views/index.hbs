@@ -16,7 +16,7 @@
                         <hr>
                         <h4>Precio $ {{price_1}} </h4>
                         <div>
-                            <form action="http://localhost:3000/checkout" method="POST">
+                            <form action="https://localhost:3443/checkout" method="POST">
                             <input type="hidden" name="title" value={{product_1}}>
                             <input type="hidden" name="price" value={{price_1}}>
                             <input type="submit" value="Comprar" class="btn btn-primary w-100">
@@ -41,7 +41,7 @@
                             <hr>
                             <h4>Precio $ {{price_2}} </h4>
                             <div>
-                                <form action="http://localhost:3000/checkout" method="POST">
+                                <form action="https://localhost:3443/checkout" method="POST">
                                 <input type="hidden" name="title" value={{product_2}}>
                                 <input type="hidden" name="price" value={{price_2}}>
                                 <input type="submit" value="Comprar" class="btn btn-primary w-100">

@@ -1,5 +1,5 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 require('dotenv').config()
 
@@ -22,9 +22,9 @@ let preference = {
     }
   ],
   back_urls: {
-      "success": "http://localhost:3000",
-      "failure": "http://localhost:3000/error",
-      "pending": "http://localhost:3000"
+      "success": "https://localhost:3443",
+      "failure": "https://localhost:3443",
+      "pending": "https://localhost:3443"
   },
   auto_return: 'approved'
 };

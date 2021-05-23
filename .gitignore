@@ -1,4 +1,5 @@
 /node_modules
+/cert
 package-lock.json
 .env
 routes.http

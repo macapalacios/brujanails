@@ -21,7 +21,11 @@
             "password": "qatest2781",
             "site_status": "active",
             "email": "test_user_93122114@testuser.com",
-            "create_at": "20/05/2021"
+            "create_at": "20/05/2021",
+            "public_key": "APP_USR-83acc047-4afe-4d0e-ac34-bfdb80161c79",
+            "access_token_prod":"APP_USR-8285338164183824-052102-3081c9123afd519430ccf9c417ddf77c-762793929",
+            "client_id": "8285338164183824",
+            "client_secret":"udkwaF0bNE87RoZrYiQaRDzDpi8MNR6G"
         }
         
     ]
