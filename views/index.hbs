@@ -1,54 +1,89 @@
 
-    <div class="container">
-        <h2 class="display-2 mt-2">BrujaNails</h2>
-        <div class="d-flex justify-content-evenly">   
-            <div class="col-md-4 mt-4">
-                <div class="card text-center">
-                    <div class="card-header">
-                        <h3>{{product_1}}   </h3>
-                    </div>
-                    <div class="card-body">
-                        <img src="/images/product_1.jpg" class="img-fluid" alt={{product_1}}>
-                         <h4>Descripcion</h4>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima inventore facilis repellat impedit, quae voluptate harum voluptatum sint nulla quia libero reprehenderit, aliquam quo minus.
-                        </p>
-                        <hr>
-                        <h4>Precio $ {{price_1}} </h4>
-                        <div>
-                            <form action="https://localhost:3443/checkout" method="POST">
-                            <input type="hidden" name="title" value={{product_1}}>
-                            <input type="hidden" name="price" value={{price_1}}>
-                            <input type="submit" value="Comprar" class="btn btn-primary w-100">
-                            </form>
-                        </div>
-                    </div>
-                     </div>
-                </div>
-        
-                <div class="col-md-4 mt-4">
-                    <div class="card text-center">
-                        <div class="card-header">
-                            <h3>{{product_2}}   </h3>
-                        </div>
-                        <div class="card-body">
-                            
-                            <img src="/images/product_2.png" class="img-fluid" alt={{product_2}}>
-                            <h4>Descripcion</h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima inventore facilis repellat impedit, quae voluptate harum voluptatum sint nulla quia libero reprehenderit, aliquam quo minus.
-                            </p>
-                            <hr>
-                            <h4>Precio $ {{price_2}} </h4>
-                            <div>
-                                <form action="https://localhost:3443/checkout" method="POST">
-                                <input type="hidden" name="title" value={{product_2}}>
-                                <input type="hidden" name="price" value={{price_2}}>
-                                <input type="submit" value="Comprar" class="btn btn-primary w-100">
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
+<div class="container">
+  <div class="row">
+    <div class="col s12 m6 l3">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/product_1.jpg" class="responsive-img">
+          <span class="card-title">{{product_1}}</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light pink lighten-4"><i class="material-icons">shopping_cart</i></a>
+        </div>
+        <div class="card-content">
+          <p>Lorem ipsum dolor sit Lorem, ipsum</p>
+        </div>
+        <h4 class="center"><i class="material-icons left">attach_money</i>{{price_1}} </h4>
+        <div class="center">
+            <form action="https://localhost:3443/checkout" method="POST">
+            <input type="hidden" name="title" value={{product_1}}>
+            <input type="hidden" name="price" value={{price_1}}>
+            <input type="submit" value="Comprar" class="btn">
+            </form>
+        </div>
+      </div>
     </div>
+  
+    <div class="col s12 m6 l3">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/product_1.jpg" class="responsive-img">
+          <span class="card-title">{{product_2}} </span>
+          <a class="btn-floating halfway-fab waves-effect waves-light pink lighten-4"><i class="material-icons">shopping_cart</i></a>
+        </div>
+        <div class="card-content">
+          <p>Lorem ipsum dolor sit amet sit amet.</p>
+        </div>
+        <h4 class="center"><i class="material-icons left">attach_money</i>{{price_2}} </h4>
+        <div class="center">
+            <form action="https://localhost:3443/checkout" method="POST">
+            <input type="hidden" name="title" value={{product_2}}>
+            <input type="hidden" name="price" value={{price_2}}>
+            <input type="submit" value="Comprar" class="btn">
+            </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m6 l3">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/product_1.jpg" class="responsive-img">
+          <span class="card-title">{{product_1}} </span>
+          <a class="btn-floating halfway-fab waves-effect waves-light pink lighten-4"><i class="material-icons">shopping_cart</i></a>
+        </div>
+        <div class="card-content">
+          <p>Lorem ipsum dolor sit amet sit amet.</p>
+        </div>
+        <h4 class="center"><i class="material-icons left ">attach_money</i>{{price_1}} </h4>
+        <div class="center">
+            <form action="https://localhost:3443/checkout" method="POST">
+                <input type="hidden" name="title" value={{product_1}}>
+                <input type="hidden" name="price" value={{price_1}}>
+                <input type="submit" value="Comprar" class="btn">
+            </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m6 l3">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/product_1.jpg" class="responsive-img">
+          <span class="card-title">{{product_2}} </span>
+          <a class="btn-floating halfway-fab waves-effect waves-light pink lighten-4"><i class="material-icons">shopping_cart</i></a>
+        </div>
+        <div class="card-content">
+          <p>Lorem ipsum dolor sit amet sit amet.</p>
+        </div>
+        <h4><i class="material-icons left">attach_money</i>{{price_2}} </h4>
+        <div class="center">
+            <form action="https://localhost:3443/checkout" method="POST">
+            <input type="hidden" name="title" value={{product_2}}>
+            <input type="hidden" name="price" value={{price_2}}>
+            <input type="submit" value="Comprar" class="btn">
+            </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
