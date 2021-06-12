@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/wwws",
+    "start": "node ./bin/wwws",
+    "dev": "nodemon ./bin/wwws",
     "test" : "snyk test"
   },
   "dependencies": {
